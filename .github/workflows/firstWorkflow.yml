@@ -1,0 +1,12 @@
+name: first workflow
+
+on: push
+
+jobs:
+  playwright-test:
+    runs-on: ubuntu-latest;
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: saye hello
+        run: echo Helloooo
